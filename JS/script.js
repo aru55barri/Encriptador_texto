@@ -8,14 +8,21 @@ encript_result.style.display="none";
 function btn_encriptar(){
     const textoEncriptado = encriptar(texto_aqui.value);
     mensaje_E_D.value = textoEncriptado;
+    let validacion = /[^(a-z)|(\s)]/g;
 
-    if (texto_aqui.value == ""){
-        encript_result.style.display = "none";
-        muneco.style.display = "";
+    if (validacion.test(texto_aqui.value)) {
+        alert("Solo se admiten letras minusculas sin acentos ni caracteres especiales");
+        return "";
     } else {
-        encript_result.style.display = "";
-        muneco.style.display = "none";
-        texto_aqui.value = "";
+
+        if (texto_aqui.value == ""){
+            encript_result.style.display = "none";
+            muneco.style.display = "";
+        } else {
+            encript_result.style.display = "";
+            muneco.style.display = "none";
+            texto_aqui.value = "";
+        }
     }
 }
 
@@ -38,14 +45,21 @@ function encriptar(stringEncript){
 function btn_desencriptar(){
     const textoDesencriptado = desencriptar(texto_aqui.value);
     mensaje_E_D.value = textoDesencriptado;
+    let validacion = /[^(a-z)|(\s)]/g;
 
-    if (texto_aqui.value == ""){
-        encript_result.style.display = "none";
-        muneco.style.display = "";
-    } else{
-        encript_result.style.display = "";
-        muneco.style.display = "none";
-        texto_aqui.value = "";
+    if (validacion.test(texto_aqui.value)) {
+        alert("Solo se admiten letras minusculas sin acentos ni caracteres especiales");
+        return "";
+    } else {
+
+        if (texto_aqui.value == ""){
+            encript_result.style.display = "none";
+            muneco.style.display = "";
+        } else{
+            encript_result.style.display = "";
+            muneco.style.display = "none";
+            texto_aqui.value = "";
+        }
     }
 }
 
