@@ -1,0 +1,323 @@
+body{
+    background: #1b1c29;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 31.09px;
+    height: 48px;
+    left: 44px;
+    margin: 20px 0;
+}
+
+.div-linkedin{
+    position: relative;
+    left: 580px;
+}
+
+.linkedin_logo{
+    width: 50px;
+    height: 48px;
+    margin: 20px 0;
+}
+
+.linkedin_logo :hover{
+    width: 53px;
+    height: 51px;
+    
+}
+
+.github_logo{
+    width: 50px;
+    height: 48px;
+    margin: 20px 0;
+    margin-right: 35px;
+}
+
+.github_logo :hover{
+    width: 53px;
+    height: 51px;
+    
+}
+
+main{
+    display: flex;
+}
+
+.section1{
+    width: 940px;
+    display: inline;
+}
+
+.munhecoimg{
+    margin: 20px 40px;
+}
+
+#msj_1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+
+    text-align: center;
+
+    /* Gray/gray-500 */
+
+    color: #bcd2e7;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#msj_2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    text-align: center;
+
+    /* Gray/gray-400 */
+
+    color: #06192c;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.texto_aqui{
+    width: 83%;
+    height: 70%;
+    font-size: 22px;
+
+    color: #FFFFFF;
+    background-color: #1b1c29;
+    
+    resize: none;
+    margin: 0 40px;
+    border: 0;
+}
+
+.texto_aqui:focus {
+    overflow: hidden;
+    outline: none;
+    
+}
+
+.instruccion{
+    /* Solo letras minúsculas y sin acentos */
+    width: 205px;
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+
+    /* Gray/gray-400 */
+
+    color: #98a4af;
+    opacity: 0.8;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    margin: 2px 0 10px 60px;
+}
+
+.b_encriptar{
+    /* Button */
+
+    cursor: pointer;
+    justify-content: center;
+    /* Auto layout */
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+    background: #0d2c52;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    margin: 0 60px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.b_encriptar:hover {
+   transform: translateY(-2px);
+}
+
+.b_encriptar:active {
+   transform: translateY(2px);
+}
+
+.b_desencriptar{
+    /* Button */
+    box-sizing: border-box;
+    cursor: pointer;
+    justify-content: center;
+
+    /* Auto layout */
+
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    /* Light gray */
+
+    background: #2d496d;
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid #637c9b;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    color: #FFFFFF;
+    font-size: 18px;
+
+}
+
+.b_desencriptar:hover {
+    transform: translateY(-2px);
+}
+
+.b_desencriptar:active {
+    transform: translateY(2px);
+}
+
+.ocultar{
+    display: none;
+}
+
+aside{
+    border-radius: 24px;
+    
+    height: 480px;
+    width: 30%;
+    background-color: #555572;
+    margin-right: 35px;
+}
+
+.encript-result{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 94%;
+    height: 80%;
+    border: 0;
+    resize: none;
+}
+
+.encript-result h3{
+    color: #bcd2e7;
+    font-size: 20px;
+}
+
+.encript-result .mensaje_E_D{
+    font-size: 18px;
+    color: #06192c;
+}
+
+.mensaje_E_D{
+    background-color:  #555572;
+    resize: none;
+    padding: 10px 0;
+    height: 340px;
+    width: 100%;
+    border: 0;
+}
+
+.mensaje_E_D:focus {
+    overflow: hidden;
+    outline: none;
+}
+
+.div-copiar{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 10%;
+    left: 120px;
+    padding: 15px 0;
+}
+
+.b_copiar{
+    /* Button */
+
+    cursor: pointer;
+    justify-content: center;
+    /* Auto layout */
+
+    width: 128px;
+    height: 37px;
+
+    /* Dark blue/dark-blue-300 */
+    background: #0d2c52;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+        
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.b_copiar:hover {
+    transform: translateY(-2px);
+}
+
+.b_copiar:active {
+    transform: translateY(2px);
+}
+
+.copyrigth{
+    color: #FFFFFF;
+    font-size: 13px;
+    text-align: center;
+    padding: 20px;
+}
