@@ -321,3 +321,79 @@ aside{
     text-align: center;
     padding: 20px;
 }
+
+@media screen and (max-width:480px) {
+    main{
+        display: block;
+    }
+
+    .div-linkedin{
+        position: relative;
+        left: 620px;
+    }
+
+    .div-github-logo{
+        position: relative;
+        left: 560px;
+        
+    }
+
+    .texto_aqui{
+        width: 740px;
+        height: 500px;
+        font-size: 50px;
+    
+        color: #FFFFFF;
+        background-color: #1b1c29;
+        
+        resize: none;
+        margin: 0 40px;
+        border: 0;
+    }
+
+    .instruccion{
+        width: 705px;
+        height: 18px;
+        font-size: 35px;
+    
+        margin: 5px 0 40px 60px;
+    }
+
+    .div-buton{
+        display: inline-block;
+        width: 850px;
+        height: 100px;
+        text-align: center;
+    }
+
+    .b_encriptar, .b_desencriptar{
+    
+        width: 228px;
+        height: 87px;
+        font-size: 24px;
+    }
+    
+    aside{
+        text-align: center;        
+        height: 580px;
+        width: 230%;
+        margin-left: 65px;
+    }
+    
+    #msj_1{
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 100%;
+    }
+
+    #msj_2{
+        font-size: 38px;
+    }
+
+    .copyrigth{
+        font-size: 25px;
+        width: 800px;
+        text-align: center;
+    }
+}
+
